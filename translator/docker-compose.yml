@@ -1,0 +1,56 @@
+services:
+  # Servizio Principale: Ollama
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+       resources:
+         reservations:
+           devices:
+             - driver: nvidia
+               count: all
+               capabilities: [gpu]
+    restart: always
+
+  # Servizio di Setup: Scarica automaticamente i modelli
+  ollama-pull-model:
+    image: curlimages/curl:latest
+    container_name: ollama_setup
+    depends_on:
+      - ollama
+    entrypoint: [ "/bin/sh", "-c" ]
+    command: >
+      "
+      echo 'In attesa che Ollama si avvii...';
+      until curl -s http://ollama:11434/api/tags > /dev/null; do
+        sleep 2;
+      done;
+      echo 'Ollama è pronto. Inizio download modelli...';
+      
+      echo 'Scaricando Llama 3.1...';
+      curl -s -X POST http://ollama:11434/api/pull -d '{\"name\": \"llama3.1:8b\"}';
+      
+      
+      echo 'Scaricando deepseek-31 thinking 14b...';
+      curl -s -X POST http://ollama:11434/api/pull -d '{\"name\": \"deepseek-r1:14b\"}';
+      
+
+      echo 'Scaricando Mistral Nemo...';
+      curl -s -X POST http://ollama:11434/api/pull -d '{\"name\": \"mistral-nemo:12b\"}';
+
+      echo 'Scaricando translategemma 12b...';
+      curl -s -X POST http://ollama:11434/api/pull -d '{\"name\": \"translategemma:12b\"}';
+
+    
+      echo 'Scaricando translategemma 27b...';
+      curl -s -X POST http://ollama:11434/api/pull -d '{\"name\": \"translategemma:27b\"}';
+      
+      echo 'Tutti i modelli sono stati scaricati correttamente.';
+      "
+
+volumes:
+  ollama_data:

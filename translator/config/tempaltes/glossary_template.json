@@ -1,0 +1,79 @@
+{
+  "technical_terms": [
+    {
+      "term": "Stakeholder",
+      "do_not_translate": true,
+      "note": "In italiano 'Portatore di interessi' è usato raramente nel software."
+    },
+    {
+      "term": "Building Block",
+      "do_not_translate": true,
+      "note": "Concetto atomico fondamentale in TOGAF."
+    },
+    {
+      "term": "Artifact",
+      "do_not_translate": true,
+      "note": "'Artefatto' esiste, ma 'Artifact' è lo standard per i diagrammi/cataloghi."
+    },
+    {
+      "term": "Gap Analysis",
+      "do_not_translate": true,
+      "note": "Tradurlo con 'Analisi degli scostamenti' è obsoleto."
+    },
+    {
+      "term": "Viewpoint",
+      "do_not_translate": true,
+      "note": "Distinto da View. Viewpoint è il punto di vista (regole), View è ciò che si vede."
+    },
+    {
+      "term": "Deliverable",
+      "do_not_translate": true,
+      "note": "Termine contrattuale standard."
+    },
+    {
+      "term": "Governance",
+      "do_not_translate": true,
+      "note": "In italiano 'Governo' ha un'accezione politica troppo forte."
+    },
+    {
+      "term": "Roadmap",
+      "do_not_translate": true,
+      "note": "Foglio di via o Tabella di marcia sono poco usati nel software."
+    },
+    {
+      "term": "Capability",
+      "do_not_translate": true,
+      "note": "Termine specifico TOGAF per le capacità di business, non semplici abilità."
+    },
+    {
+      "term": "Baseline",
+      "do_not_translate": true,
+      "note": "Indica l'architettura attuale (AS-IS)."
+    },
+    {
+      "term": "Target Architecture",
+      "do_not_translate": true,
+      "note": "Indica l'architettura futura (TO-BE)."
+    },
+    {
+      "term": "Framework",
+      "do_not_translate": true,
+      "note": "Mai tradurre con 'Telaio' o 'Infrastruttura'."
+    },
+    {
+      "term": "Repository",
+      "do_not_translate": true,
+      "note": "Indica il database dell'architettura."
+    },
+    {
+      "term": "Metamodel",
+      "do_not_translate": true,
+      "note": "Definisce la struttura dei dati."
+    },
+    {
+      "term": "Work Package",
+      "do_not_translate": true,
+      "note": "Unità di lavoro definita nel piano di migrazione."
+    }
+  ]
+}
