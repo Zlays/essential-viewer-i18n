@@ -1,0 +1,20 @@
+{
+  "enable_glossary_mapping_only": false,
+  "enable_replace_translation_only": true,
+
+  "chunk_size_translate": 15,
+  "chunk_size_glossary": 33,
+  
+
+  "llm_provider": "aws",
+
+  "ollama": {
+    "model_name": "mistral-nemo:12b"
+  },
+
+  "aws": {
+    "region": "eu-central-1",
+    "bedrock_model_id_translate": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "bedrock_model_id_glossary": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0"
+  }
+}

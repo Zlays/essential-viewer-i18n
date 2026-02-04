@@ -1,17 +1,18 @@
 import os
 import sys
-import json
+import re
 print(f"Sto usando: {sys.executable}")
+import json
 import xml.etree.ElementTree as ET
 import ollama
+import boto3
 
 # --- CONFIGURAZIONE ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 XML_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "lt-lt.xml"))
 DB_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "database.json"))
 GLOSSARY_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "glossary.json"))
-MODEL_NAME = "mistral-nemo:12b" # deepseek-r1:14b, translategemma:12bm translategemma:27b, mistral-nemo:12b
-CHUNK_SIZE = 5  # Numero di termini da passare all'AI per ogni chiamata
+CONFIG_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "config.json"))
 
 # Log di verifica path avvio
 print(f"--- Controllo Percorsi ---")
@@ -32,280 +33,332 @@ def save_json(path, data):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-def build_system_prompt(glossary_terms, texts_to_check, batch_mode=False):
-    """Costruisce il prompt di sistema per la traduzione.
-    
-    Args:
-        glossary_terms: Lista completa dei termini del glossario
-        texts_to_check: Testo o lista di testi da controllare per trovare termini rilevanti
-        batch_mode: Se True, richiede risposta in formato JSON array
+def load_config():
+    """Carica il file di configurazione."""
+    default_config = {
+        "enable_glossary_mapping_only": False,
+        "enable_generate_translation_only": False,  # <--- NUOVA CONFIGURAZIONE AGGIUNTA
+        "llm_provider": "ollama",   # ollama | aws
+        "model_name": "mistral-nemo:12b",   # Nome modello Ollama
+        "chunk_size_translate": 10, # Batch size
+        "bedrock_model_id_translate": "anthropic.claude-3-haiku-20240307-v1:0", 
+        "aws_region": "eu-central-1"
+    }
+    config = load_json(CONFIG_PATH, default=default_config)
+
+    for key, value in default_config.items():
+        if key not in config:
+            config[key] = value
+
+    return config
+
+def extract_json_from_text(text):
     """
-    # Se texts_to_check è una lista, uniscila in un'unica stringa
+    Pulisce la risposta dell'LLM per estrarre solo il JSON valido.
+    Gestisce i blocchi markdown ```json ... ```
+    """
+    try:
+        # Cerca blocchi di codice json
+        match = re.search(r"```json\s*(\{.*\}|\[.*\])\s*```", text, re.DOTALL)
+        if match:
+            return match.group(1)
+        
+        # Se non trova blocchi, cerca la prima quadra/graffa aperta e l'ultima chiusa
+        match = re.search(r"(\{.*\}|\[.*\])", text, re.DOTALL)
+        if match:
+            return match.group(1)
+            
+        return text # Ritorna il testo grezzo se non trova nulla
+    except Exception:
+        return text
+
+def translate_texts(texts, system_prompt, glossary_terms=None, batch_mode=True):
+    """
+    Traduce usando Ollama o AWS Bedrock (Claude).
+    """
+    provider = CONFIG["llm_provider"]
+
+    # Prompt utente standard
+    user_content = f"Translate the following numbered list to Italian. Maintain the numbering format.\n\n{texts}"
+
+    if provider == "ollama":
+        messages = [
+            {'role': 'system', 'content': system_prompt},
+            {'role': 'user', 'content': user_content}
+        ]
+        response = ollama.chat(model=MODEL_NAME, messages=messages)
+        return extract_json_from_text(response["message"]["content"].strip())
+
+    elif provider == "aws":
+        # Inizializza Bedrock Runtime
+        client = boto3.client(
+            service_name="bedrock-runtime",
+            region_name=CONFIG["aws_region"]
+        )
+
+        # Costruzione Body per modelli Claude 3 (Messaggi API)
+        # Nota: Se usi Llama su Bedrock, la struttura del body è diversa. 
+        # Questo codice è ottimizzato per Claude (Haiku/Sonnet/Opus).
+        
+        body = json.dumps({
+            "anthropic_version": "bedrock-2023-05-31",
+            "max_tokens": 2000,
+            "system": system_prompt, # Claude supporta il campo system a livello top
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": user_content}
+                    ]
+                }
+            ],
+            "temperature": 0 # Temperatura 0 per traduzioni deterministiche
+        })
+
+        try:
+            response = client.invoke_model(
+                modelId=CONFIG.get("bedrock_model_id_translate", "anthropic.claude-3-haiku-20240307-v1:0"),
+                body=body
+            )
+            
+            response_body = json.loads(response.get("body").read())
+            result_text = response_body.get("content")[0].get("text")
+            
+            return extract_json_from_text(result_text)
+
+        except Exception as e:
+            print(f"Errore AWS Bedrock: {e}")
+            raise e # Rilancia l'errore per gestirlo nel fallback
+
+    else:
+        raise ValueError(f"Provider non supportato: {provider}")
+
+
+def map_glossaries_to_database():
+    db = load_json(DB_PATH)
+    glossary = load_json(GLOSSARY_PATH, default={"technical_terms": []})
+
+    if not db:
+        print("Database vuoto.")
+        return
+
+    all_terms = [t['term'] for t in glossary.get("technical_terms", [])]
+
+    if not all_terms:
+        return
+
+    updated_count = 0
+    for item in db:
+        value_text = item.get('value', '')
+        item['glossaries'] = [t for t in all_terms if t in value_text]
+        if item['glossaries']:
+            updated_count += 1
+
+    save_json(DB_PATH, db)
+    print(f"Mappatura glossari: {updated_count}/{len(db)}")
+
+
+def build_system_prompt(glossary_terms, texts_to_check, batch_mode=False):
+    # Logica ottimizzata per LLM (sia Ollama che Bedrock)
+    
     if isinstance(texts_to_check, list):
         combined_text = " ".join(texts_to_check)
     else:
         combined_text = texts_to_check
-    
-    # Filtra solo i termini del glossario che sono presenti nel testo
+
     relevant_terms = [term for term in glossary_terms if term in combined_text]
-    
     glossary_str = ", ".join([f"'{term}'" for term in relevant_terms]) if relevant_terms else ""
-    
+
     base_prompt = (
-        f"You are a technical EA/TOGAF translator. Translate from English to Italian. "
-        f"Do NOT replace symbols like '#', '@' (e.s: '#' must remain '#', '@' must remain '@'). ")
-    
+        "You are an expert Enterprise Architecture translator (English to Italian). "
+        "Your task is to translate the provided text naturally but accurately.\n"
+        "RULES:\n"
+        "1. Do NOT translate technical acronyms (e.g., TOGAF, API, AWS).\n"
+        "2. Do NOT change symbols like '#', '@' or numbering.\n"
+    )
+
     if glossary_str:
-        base_prompt += (
-            f"CRITICAL: Keep these terms/symbols EXACTLY as they appear in the original text: {glossary_str}. "
-        )
-    
+        base_prompt += f"3. STRICTLY DO NOT TRANSLATE the following terms: [{glossary_str}]. Keep them in English.\n"
+
     if batch_mode:
         base_prompt += (
-            "Respond with ONLY the translations in JSON format as an array, maintaining the same order. "
-            "Format: [\"translation1\", \"translation2\", ...]"
+            "4. OUTPUT FORMAT: Return ONLY a valid JSON array of strings containing the translations. "
+            "Example: [\"Traduzione 1\", \"Traduzione 2\"]. "
+            "Do NOT output markdown code blocks or explanations."
         )
     else:
-        base_prompt += "Respond ONLY with the translation, no comments."
-    
+        base_prompt += "4. Output ONLY the translated string."
+
     return base_prompt
 
 
 def import_xml_to_json():
-    """Legge l'XML con Namespace e popola il database JSON."""
     if not os.path.exists(XML_PATH):
-        print(f"Errore: File {XML_PATH} non trovato.")
+        print("XML non trovato.")
         return
 
     db = load_json(DB_PATH)
-    # Creiamo un set dei nomi esistenti per evitare duplicati e ignorare stringhe vuote
-    existing_names = {item['name'] for item in db if item.get('name')}
-    
-    # Definiamo il namespace trovato nel tuo file XML
+    existing = {i['name'] for i in db if i.get("name")}
+
     namespace = {'ns': 'http://www.enterprise-architecture.org/essential/language'}
+    tree = ET.parse(XML_PATH)
+    root = tree.getroot()
 
-    try:
-        tree = ET.parse(XML_PATH)
-        root = tree.getroot()
+    for msg in root.findall('.//ns:message', namespace):
+        name_node = msg.find('ns:name', namespace)
+        if name_node is not None and name_node.text:
+            name = name_node.text.strip()
+            if name not in existing:
+                db.append({
+                    "name": name,
+                    "value": "",
+                    "processed": False,
+                    "glossaries": []
+                })
+                existing.add(name)
 
-        # Usiamo XPath per trovare tutti i <message> ovunque siano, 
-        # usando il prefisso 'ns' per il namespace
-        messages = root.findall('.//ns:message', namespace)
-        
-        new_entries = 0
-        for msg in messages:
-            name_node = msg.find('ns:name', namespace)
-            
-            # Verifichiamo che il nodo esista e che abbia del testo (non vuoto)
-            if name_node is not None and name_node.text:
-                name_text = name_node.text.strip()
-                
-                if name_text not in existing_names:
-                    db.append({
-                        "name": name_text,
-                        "value": "",
-                        "processed": False
-                    })
-                    existing_names.add(name_text)
-                    new_entries += 1
-        
-        save_json(DB_PATH, db)
-        print(f"Importazione dell'XML completata: {new_entries} nuove voci aggiunte nel DB.")
-        
-    except ET.ParseError as e:
-        print(f"Errore durante il parsing dell'XML: {e}")
+    save_json(DB_PATH, db)
+
 
 def translate_items(batch_size=5):
-    """Traduce i record non ancora processati in batch con un'unica chiamata AI."""
     db = load_json(DB_PATH)
     glossary = load_json(GLOSSARY_PATH, default={"technical_terms": []})
-    
-    # Filtra i non processati
     to_process = [i for i in db if not i['processed']]
-    
+
     if not to_process:
-        print("Nessun record da tradurre.")
         return False
 
-    # Limitiamo al batch size per non sovraccaricare
     batch = to_process[:batch_size]
-    
-    # Estraiamo solo i termini da non tradurre
-    glossary_terms = [
-        t['term'] for t in glossary.get("technical_terms", []) 
+
+    glossary_terms_objs = [
+        t['term'] for t in glossary.get("technical_terms", [])
         if t.get("do_not_translate")
     ]
+    
+    batch_full_text = " ".join([item['name'] for item in batch])
+    relevant_glossary_terms = [t for t in glossary_terms_objs if t in batch_full_text]
 
-    # Prepara la lista dei testi da tradurre
     texts_list = [item['name'] for item in batch]
+    system_prompt = build_system_prompt(relevant_glossary_terms, texts_list, batch_mode=True)
     
-    # Crea il prompt di sistema usando la funzione helper, passando i testi da controllare
-    system_prompt = build_system_prompt(glossary_terms, texts_list, batch_mode=True)
+    # Per Bedrock mandiamo solo la lista pura, il prompt gestisce il formato
+    texts_to_translate = json.dumps(texts_list, ensure_ascii=False) 
 
-    # Crea la lista numerata di frasi da tradurre
-    texts_to_translate = "\n".join([f"{idx + 1}. {item['name']}" for idx, item in enumerate(batch)])
-    
-    print(f"Traducendo {len(batch)} termini in batch...")
-    
+    response_content = translate_texts(
+        texts_to_translate,
+        system_prompt,
+        glossary_terms=relevant_glossary_terms,
+        batch_mode=True
+    )
+
     try:
-        messages = [
-            {'role': 'system', 'content': system_prompt},
-            {'role': 'user', 'content': f"Translate these texts to Italian:\n{texts_to_translate}"},
-        ]
-        response = ollama.chat(model=MODEL_NAME, messages=messages)
+        translations = json.loads(response_content)
         
-        # Estrai il contenuto della risposta
-        response_content = response['message']['content'].strip()
-        
-        # Prova a fare il parsing del JSON
-        try:
-            # Rimuovi eventuali backtick markdown
-            if response_content.startswith("```"):
-                response_content = response_content.split("```")[1]
-                if response_content.startswith("json"):
-                    response_content = response_content[4:]
-                response_content = response_content.strip()
-            
-            translations = json.loads(response_content)
-            
-            # Verifica che il numero di traduzioni corrisponda
-            if len(translations) != len(batch):
-                print(f"ATTENZIONE: Numero di traduzioni ({len(translations)}) diverso dal batch ({len(batch)})")
-                # Fallback: traduzione una per una
-                return translate_items_fallback(batch, glossary_terms, db)
-            
-            # Assegna le traduzioni
-            for idx, item in enumerate(batch):
-                item['value'] = translations[idx].strip()
-                item['processed'] = True
-                print(f"{item['name']} → {item['value']}")
-                
-        except json.JSONDecodeError as e:
-            print(f"Errore nel parsing JSON della risposta: {e}")
-            print(f"Risposta ricevuta: {response_content}")
-            # Fallback: traduzione una per una
-            return translate_items_fallback(batch, glossary_terms, db)
-            
-    except Exception as e:
-        print(f"Errore durante la traduzione batch: {e}")
-        # Fallback: traduzione una per una
-        return translate_items_fallback(batch, glossary_terms, db)
+        if len(translations) != len(batch):
+            print(f"Warn: Mismatch lunghezze ({len(translations)} vs {len(batch)}). Fallback.")
+            raise ValueError("Mismatch batch size")
 
-    # Salva il progresso
+        for i, item in enumerate(batch):
+            item['value'] = translations[i].strip()
+            item['processed'] = True
+
+    except Exception as e:
+        print(f"Errore batch o JSON malformato: {e}. Risposta grezza: {response_content[:50]}...")
+        return translate_items_fallback(batch, relevant_glossary_terms, db)
+
     save_json(DB_PATH, db)
-    
-    # Calcola quanti item rimangono da processare
+    # Stampa di progresso
     remaining = len(to_process) - batch_size
-    if remaining > 0:
-        print(f"\n✓ Batch completato. Rimangono ancora {remaining} item da processare.\n")
-    else:
-        print(f"\n✓ Tutti gli item sono stati processati!\n")
+    sys.stdout.write(f"\rProcessati: {len(batch)} | Rimanenti: {max(0, remaining)}   ")
+    sys.stdout.flush()
     
     return len(to_process) > batch_size
 
 
 def translate_items_fallback(batch, glossary_terms, db):
-    """Fallback: traduce gli item uno per uno se il batch fallisce."""
-    print("Utilizzo modalità fallback (traduzione singola)...")
-    
+    print("\nAvvio Fallback riga per riga...")
     for item in batch:
-        print(f"Traducendo: {item['name']}...")
-        try:
-            # Crea il prompt di sistema filtrando i termini rilevanti per questo specifico item
-            system_prompt = build_system_prompt(glossary_terms, item['name'], batch_mode=False)
-            
-            messages = [
-                {'role': 'system', 'content': system_prompt},
-                {'role': 'user', 'content': f"Translate: {item['name']}"},
-            ]
-            response = ollama.chat(model=MODEL_NAME, messages=messages)
-
-            item['value'] = response['message']['content'].strip()
-            item['processed'] = True
-            print(f"Risultato: {item['value']}")
-        except Exception as e:
-            print(f"Errore con '{item['name']}': {e}")
+        system_prompt = build_system_prompt(glossary_terms, item['name'], batch_mode=False)
+        item['value'] = translate_texts(
+            item['name'],
+            system_prompt,
+            glossary_terms=glossary_terms,
+            batch_mode=False
+        ).strip()
+        item['processed'] = True
 
     save_json(DB_PATH, db)
     return True
 
-def update_xml_with_translations():
-    """Aggiorna il file XML originale inserendo le traduzioni nei tag <value>."""
-    if not os.path.exists(XML_PATH):
-        print(f"Errore: File XML {XML_PATH} non trovato.")
-        return
-    
-    db = load_json(DB_PATH)
-    if not db:
-        print("Database vuoto, nessuna traduzione da applicare.")
-        return
-    
-    # Crea un dizionario name -> value per lookup veloce
-    translations_dict = {item['name']: item['value'] for item in db if item.get('processed')}
-    
-    if not translations_dict:
-        print("Nessuna traduzione processata trovata nel database.")
-        return
-    
-    namespace = {'ns': 'http://www.enterprise-architecture.org/essential/language'}
-    
-    try:
-        # Parse dell'XML
-        tree = ET.parse(XML_PATH)
-        root = tree.getroot()
-        
-        # Trova tutti i messaggi
-        messages = root.findall('.//ns:message', namespace)
-        
-        updated_count = 0
-        for msg in messages:
-            name_node = msg.find('ns:name', namespace)
-            value_node = msg.find('ns:value', namespace)
-            
-            if name_node is not None and name_node.text:
-                name_text = name_node.text.strip()
-                
-                # Se abbiamo una traduzione per questo name
-                if name_text in translations_dict:
-                    translation = translations_dict[name_text]
-                    
-                    # Aggiorna il nodo value
-                    if value_node is not None:
-                        value_node.text = translation
-                        updated_count += 1
-                        print(f"✓ Aggiornato: {name_text} → {translation}")
-        
-        # Salva l'XML modificato
-        # Registra il namespace per mantenere il prefisso corretto
-        ET.register_namespace('', 'http://www.enterprise-architecture.org/essential/language')
-        ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
-        
-        tree.write(XML_PATH, encoding='UTF-8', xml_declaration=True)
-        
-        print(f"\n✓ File XML aggiornato con successo!")
-        print(f"  Totale traduzioni applicate: {updated_count}")
-        
-    except ET.ParseError as e:
-        print(f"Errore durante il parsing dell'XML: {e}")
-    except Exception as e:
-        print(f"Errore durante l'aggiornamento dell'XML: {e}")
-        
-# --- ESECUZIONE ---
-if __name__ == "__main__":
-    # 1. Importa dati
-    import_xml_to_json()
 
-    # 2. Ciclo di traduzione
-    print("Inizio traduzione...")
-    while translate_items(batch_size=CHUNK_SIZE):
-        print("-" * 20)
+def update_xml_with_translations():
+    if not os.path.exists(XML_PATH):
+        print(f"Errore: File XML non trovato in {XML_PATH}")
+        return 0
+
+    db = load_json(DB_PATH)
+    # Creiamo un dizionario Name -> Value per un accesso rapido
+    # NOTA: Rimuovo il filtro 'if i['processed']' se vuoi che copi TUTTO quello che c'è nel DB
+    translations = {i['name']: i['value'] for i in db if i.get('value')}
+
+    namespace = {'ns': 'http://www.enterprise-architecture.org/essential/language'}
+    tree = ET.parse(XML_PATH)
+    root = tree.getroot()
+
+    updated_count = 0
     
-    print("\nTraduzione completata.")
+    # Cerchiamo tutti i blocchi <message>
+    for msg in root.findall('.//ns:message', namespace):
+        name_node = msg.find('ns:name', namespace)
+        value_node = msg.find('ns:value', namespace)
+        
+        if name_node is not None and name_node.text:
+            name = name_node.text.strip()
+            # Se il nome esiste nel nostro database JSON
+            if name in translations and value_node is not None:
+                old_value = value_node.text
+                new_value = translations[name]
+                
+                # Aggiorniamo il valore e incrementiamo il contatore
+                value_node.text = new_value
+                updated_count += 1
+
+    # Salvataggio con mantenimento dei namespace originali
+    ET.register_namespace('', 'http://www.enterprise-architecture.org/essential/language')
+    tree.write(XML_PATH, encoding='UTF-8', xml_declaration=True)
     
-    # 3. Aggiorna l'XML con le traduzioni
-    print("\n" + "="*50)
-    print("Aggiornamento del file XML...")
-    print("="*50 + "\n")
-    update_xml_with_translations()
-    
-    print("\nProcesso completato.")
+    return updated_count
+
+
+# --- MAIN ---
+if __name__ == "__main__":
+    CONFIG = load_config()
+    MODEL_NAME = CONFIG.get("model_name", "mistral-nemo:12b")
+    CHUNK_SIZE = CONFIG.get("chunk_size_translate", 5) 
+
+    print("--- Configurazione Attuale ---")
+    print(f"Provider: {CONFIG['llm_provider']}")
+    print(f"Generate Only: {CONFIG['enable_generate_translation_only']}\n")
+
+    if CONFIG["enable_glossary_mapping_only"]:
+        print("Modo: Mapping Glossario...")
+        map_glossaries_to_database()
+
+    elif CONFIG["enable_generate_translation_only"]:
+        print("Modo: Sostituzione valori da Database a XML...")
+        num_sostituiti = update_xml_with_translations()
+        print(f"Operazione completata con successo.")
+        print(f"TOTALE VOCI SOSTITUITE NELL'XML: {num_sostituiti}")
+
+    else:
+        # Flusso standard con Traduzione LLM
+        import_xml_to_json()
+        print("Inizio traduzione con LLM...")
+        while translate_items(CHUNK_SIZE):
+            pass
+        
+        print("\nTraduzione completata. Aggiornamento XML...")
+        num_sostituiti = update_xml_with_translations()
+        print(f"Voci aggiornate nell'XML: {num_sostituiti}")
+        
+        map_glossaries_to_database()

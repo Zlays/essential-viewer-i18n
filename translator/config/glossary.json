@@ -76,2149 +76,1019 @@
       "note": "Unità di lavoro definita nel piano di migrazione."
     },
     {
-      "term": "users",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "people",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "apps",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
       "term": "party",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "view",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processes",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "domain",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "capabilities",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "implement",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "access",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "control",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "compliance",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "method",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "actor",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "role",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "objectives",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "type",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "types",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "selected",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "analysis",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "implemented",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "architecture",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "change",
+      "term": "footprint",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "interface",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "state",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "model",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "dependencies",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "dependency",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "network",
+      "term": "function",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "deployment",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "instances",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "implementation",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "impact",
+      "term": "functions",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "instance",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "deployed",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "lifecycle",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "milestone",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "reference",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "risk",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "security",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "level",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "applications",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "scope",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "status",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "service",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "software",
+      "term": "services",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "strategic",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "supplier",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "platform",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "strategy",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "alignment",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "user",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "views",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "layer",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "shared",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "organisation",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "physical",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "process",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "mapped",
+      "term": "locations",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "managed",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "configuration",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "attributes",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "automated",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "issues",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "plans",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "plan",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "driver",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "drivers",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "environment",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "overview",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "objective",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "owner",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "performance",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "impacted",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "stakeholders",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "units",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "workflow",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "goals",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "individual",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "personal",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "management",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "organisations",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "language",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "objects",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "subjects",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "nodes",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "specification",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "components",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "interoperability",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "domains",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "component",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "contract",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "renewal",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "review",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "link",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "targets",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "criticality",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "product",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "value",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "database",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "installation",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "schema",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "representation",
+      "term": "datatoapplication",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "representations",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "subject",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "matrix",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "flow",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "delivery",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "models",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "node",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "system",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "element",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "document",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "documents",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "published",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "systems",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "elements",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "enable",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "enterprise",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "report",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "maintenance",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "event",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "solutions",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "external",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "references",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "target",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "functionsservices",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "provided",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "geographic",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "goal",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "source",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "stage",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "hierarchy",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "host",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "location",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "roles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "informationdata",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "teams",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "technologies",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "initiatives",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "implications",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "inbound",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "deployments",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "infrastructure",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "integrations",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "events",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "responsibilities",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "actors",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "assets",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "organisational",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "structure",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "unit",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "relationships",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "policy",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "distributed",
+      "term": "measures",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "outlines",
+      "term": "deficiencies",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "opportunities",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "improvement",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "increments",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "timeline",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "progression",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "classes",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "standards",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "basis",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "legend",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processing",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "project",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "logical",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "diagram",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "step",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "consumers",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "platforms",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "outbound",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "vendor",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "programme",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "architectures",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "principle",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "select",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "conceptual",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "realised",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "regulatory",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "retention",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "runtime",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "template",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "standard",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "govern",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "describes",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "maps",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "underlying",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "incremental",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "redundancies",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "integration",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business processes",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business domain",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business capabilities",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "access control",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application architecture",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "architecture principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application capability",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "capability catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "capability summary",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "application change",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "change analysis",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "application distribution",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application interface",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application data",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "dependency model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application dependencies",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application dependency",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application deployment",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "analysis catalogue",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application function",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "function implementation",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "interface change",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application provider",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "reference model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "risk determined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "security compliance",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "compliance level",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "gdpr data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "data scope",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application roadmap",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "lifecycle status",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application service",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "service catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application services",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "services supporting",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business capability",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "service stakeholder",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "stakeholder model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "service summary",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology platform",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "platform model",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology strategy",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "strategy alignment",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business process",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "data managed",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology domain",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "capability applications",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "capability business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "process analysis",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business drivers",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "business functionservice",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business information",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "model catalogue",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business objective",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business objectives",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business owner",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business performance",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "process catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business service",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information object",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "process family",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business roadmap",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business services",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "personal data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "strategic plan",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business area",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "roadmap model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "required view",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data objects",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "data subjects",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology components",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "interoperability change",
+      "term": "technology products",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business domains",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information store",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology capabilities",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "physical data",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "database schema",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data object",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "provider model",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data quality",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data representation",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data roadmap",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data security",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "security model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data subject",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "service model",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "process flow",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "application instances",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology instances",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "dependent technology",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "physical node",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined strategic",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "maintenance service",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology component",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology product",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "gdpr application",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "organisation catalogue",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "purpose strategic",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "summary view",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "describe drivers",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "drivers objectives",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "strategic roadmap",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "impacted application",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "impacted business",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business roles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "impacted elements",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information views",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "organisation units",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "impacted technology",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information data",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "information catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information concept",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "information representation",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information view",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "model defines",
+      "term": "view summary",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "model indicates",
+      "term": "information assets",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "derived comparison",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "between baseline",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "business architecture",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "architecture models",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "models target",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "data architecture",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "individual increments",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "increments change",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "change over",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "over timeline",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "timeline show",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "show progression",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "progression baseline",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "architecture target",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology architecture",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology reference",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "captured workflow",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology nodes",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "instances dependant",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology instance",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "applications captured",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "applications defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined milestone",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "services defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined capability",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "captured application",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined process",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processes captured",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "captured business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processes defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "roles defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "components defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined object",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "objects defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "captured information",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "definition captured",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "plans defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "description captured",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology platforms",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "functions defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information concepts",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "views defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined information",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "logical information",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "supporting technology",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "physical information",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "information schema",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "architecture defined",
+      "term": "physical processes",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "stakeholders defined",
+      "term": "process steps",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "strategic goals",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "supporting data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology architectures",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology capability",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology functions",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "workflow steps",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "organisation structure",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "principle compliance",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "permitted data",
+      "term": "physical process",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "select data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "select technology",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology node",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "conceptual data",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "scope enterprise",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "enterprise organised",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processes performed",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "processes supporting",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "products used",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "programme plan",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "project compliance",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "compliance across",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology principles",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
-      "term": "roles people",
+      "term": "technology distribution",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "select application",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "category data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "data retention",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "retention policy",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "supporting application",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "technology change",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "analysis technology",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology interoperability",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "component catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "node catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "product catalogue",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "technology roadmap",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "capabilities enterprise",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "impacted project",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "services support",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "following business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "following diagram",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "diagram describes",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "conceptual business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "describes different",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "different types",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "diagram highlights",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "following matrix",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "matrix maps",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "maps logical",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "logical data",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "services across",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "used business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "basis defined",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "defined level",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "level security",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "compliance underlying",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "roadmap inform",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "regarding incremental",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "incremental changes",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "changes undertaken",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "purpose application",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "model inform",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "address deficiencies",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "deficiencies redundancies",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "redundancies identified",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "view provides",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "provides summary",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "view shows",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "shows applications",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "contained repository",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "shows business",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "shows technology",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "nodes contained",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
-    },
-    {
-      "term": "repository organised",
-      "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     },
     {
       "term": "value stream",
       "do_not_translate": true,
-      "note": "Validato via AI (TOGAF/EA)"
+      "note": "Validato via AI (aws)"
     }
   ]
 }
