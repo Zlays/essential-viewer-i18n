@@ -1,5 +1,5 @@
 {
-  "technical_terms": [ 
+  "technical_terms": [
     {
       "term": "Enterprise",
       "do_not_translate": true,
@@ -1092,6 +1092,856 @@
     },
     {
       "term": "value stream",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "mapping",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "product",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "roadmaps",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "products",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "solution",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "analysis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "apis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "regulations",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "relationship",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "controls",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "delivery",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "network",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "deployment",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "deployments",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "kpis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "landscape",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "lifecycles",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "overlay",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "perspective",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "maturity",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "frameworks",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "capabilites",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "register",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "scenario",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "element",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "elements",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "classification",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "nodes",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "components",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "competencies",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "completeness",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "component",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "layered",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "hierarchical",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "decomposition",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "foundation",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "goal",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "granularity",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "integration",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "informationdata",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "infrastructure",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "initiation",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "integrations",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "portfolio",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "requirements",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "template",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "vulnerabilities",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "vulnerability",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "govern",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architectural",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "incremental",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "accountability",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "principles catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application capabilities",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "capability model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "delivery model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "current state",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "design authority",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application disposition",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application diversity",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application footprint",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "impact analysis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application landscape",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application lifecycle",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "performance indicators",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "rationalisation analysis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "capability analysis",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "software architecture",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application technology",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "platform model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application usage",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architecture layer",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "principles compliance",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "compliance dashboard",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategic plans",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting capability",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "essential viewer",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business activity",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "capability application",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "capability applications",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business change",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting applications",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "domain summary",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business footprint",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business functionservice",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business milestone",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "model catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategy planner",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business models",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "objective summary",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "reporting structure",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "structure model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application mapping",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "process family",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "process summary",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "processes supported",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "roles organisation",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "goals model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business strategy",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "business units",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategic plan",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "cloud service",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "technology service",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "compliance levels",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "data repository",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "object catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "product lifecycles",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "layered view",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "logical technology",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "control policies",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "organisational structure",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "hierarchical decomposition",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "organisational unit",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "software component",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "logical data",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "technology lifecycles",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "value streams",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "enterprise application",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "enterprise architecture",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "organisation catalogue",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "data flow",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "organisation unit",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architecture state",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "performance indicator",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "logical model",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architecture maturity",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "components defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "data elements",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "objects defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "defined object",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "plans defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "flow defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "functions defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "defined product",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "views defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "defined information",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architecture defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "objectives defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "units defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting technology",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "product vendor",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "products defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "reporting hierarchy",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "service levels",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "stakeholders defined",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supported applications",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supported business",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supported processes",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supported services",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supported strategic",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting data",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting projects",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting services",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "supporting systems",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "mapped technology",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "physical technology",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "value chain",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "application portfolio",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategic roadmaps",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategic objectives",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "enterprise landscape",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "standards compliance",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "strategy roadmap",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "target baseline",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "technology domains",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "solution architecture",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architectural governance",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "information flows",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "definition architecture",
+      "do_not_translate": true,
+      "note": "Validato via AI (aws)"
+    },
+    {
+      "term": "architecture strategy",
       "do_not_translate": true,
       "note": "Validato via AI (aws)"
     }
