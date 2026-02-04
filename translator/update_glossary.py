@@ -10,7 +10,7 @@ import boto3  # Necessario per AWS Bedrock
 # --- PERCORSI FILE ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(SCRIPT_DIR, "config", "config.json")
-XML_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "lt-lt.xml"))
+XML_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "it-it.xml"))
 GLOSSARY_PATH = os.path.join(SCRIPT_DIR, "config", "glossary.json")
 
 def load_config():

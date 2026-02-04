@@ -1,5 +1,10 @@
 {
-  "technical_terms": [
+  "technical_terms": [ 
+    {
+      "term": "Enterprise",
+      "do_not_translate": true,
+      "note": "Enterprise"
+    },
     {
       "term": "Stakeholder",
       "do_not_translate": true,

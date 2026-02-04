@@ -11,6 +11,7 @@ We're looking for the community's support to help with the translation of Essent
 * en-us.xml
 * es-es.xml
 * fr-fr.xml
+* it-it.xml
 * lt-lt.xml
 * pt-br.xml
 * pt-pt.xml

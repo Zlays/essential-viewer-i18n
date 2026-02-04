@@ -1,6 +1,11 @@
 {
   "technical_terms": [
     {
+      "term": "Enterprise",
+      "do_not_translate": true,
+      "note": "Enterprise"
+    },
+    {
       "term": "Stakeholder",
       "do_not_translate": true,
       "note": "In italiano 'Portatore di interessi' è usato raramente nel software."

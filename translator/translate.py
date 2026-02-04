@@ -9,7 +9,7 @@ import boto3
 
 # --- CONFIGURAZIONE ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-XML_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "lt-lt.xml"))
+XML_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "it-it.xml"))
 DB_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "database.json"))
 GLOSSARY_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "glossary.json"))
 CONFIG_PATH = os.path.normpath(os.path.join(SCRIPT_DIR, "config", "config.json"))
