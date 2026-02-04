@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<language xmlns="http://www.enterprise-architecture.org/essential/language" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="en-gb" xsi:schemaLocation="http://www.enterprise-architecture.org/essential/language language.xsd">
+<language xmlns="http://www.enterprise-architecture.org/essential/language" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="it-it" xsi:schemaLocation="http://www.enterprise-architecture.org/essential/language language.xsd">
     <dateformat>[D1o] [MNn], [Y]</dateformat>
     <numberformat>#</numberformat>
     <strings>
